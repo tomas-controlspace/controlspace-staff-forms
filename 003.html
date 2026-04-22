@@ -213,8 +213,8 @@
 
         <!-- RAPIDSTOR START -->
         <script>
-          if (location.hash !== '#/facility/staff-self-service') {
-            location.hash = '#/facility/staff-self-service';
+          if (location.hash !== '#/facility/self-service/enquiries') {
+            location.hash = '#/facility/self-service/enquiries';
           }
         </script>
         <div id="rapidstor-app">
@@ -232,8 +232,8 @@
               var mo = new MutationObserver(function () {
                 if (host.querySelector(':scope > :not(.rapidstor-loading):not(script):not(#rapidstor-ie)')) {
                   loader.remove();
-                  if (location.hash !== '#/facility/staff-self-service') {
-                    location.hash = '#/facility/staff-self-service';
+                  if (location.hash !== '#/facility/self-service/enquiries') {
+                    location.hash = '#/facility/self-service/enquiries';
                   }
                   mo.disconnect();
                 }
