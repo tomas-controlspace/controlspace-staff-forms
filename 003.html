@@ -213,11 +213,6 @@
         <p class="subtitle">Walk-in, chamada recebida, ou qualquer contacto que não deva ser seguido automaticamente pela Maria (AI).</p>
 
         <!-- RAPIDSTOR START -->
-        <script>
-          if (location.hash !== '#/facility/self-service/enquiries') {
-            location.hash = '#/facility/self-service/enquiries';
-          }
-        </script>
         <div id="rapidstor-app">
           <div class="rapidstor-loading">
             <span class="rapidstor-dot"></span>
@@ -233,9 +228,6 @@
               var mo = new MutationObserver(function () {
                 if (host.querySelector(':scope > :not(.rapidstor-loading):not(script):not(#rapidstor-ie)')) {
                   loader.remove();
-                  if (location.hash !== '#/facility/self-service/enquiries') {
-                    location.hash = '#/facility/self-service/enquiries';
-                  }
                   mo.disconnect();
                 }
               });
